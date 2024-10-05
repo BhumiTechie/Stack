@@ -40,7 +40,7 @@ const Navbar = ({ handleSlideIn }) => {
         </button>
         <div className="navbar-1">
           <Link to="/" className="nav-item nav-logo">
-            <img src={logo} alt="logo" /> Code Quest
+            <img src={logo}  /> 
           </Link>
           <Link to="/" className="nav-item nav-btn res-nav">
             About
@@ -82,6 +82,7 @@ const Navbar = ({ handleSlideIn }) => {
               </button>
             </>
           )}
+          <Link to="/GoogleAuth">Sign in with Google</Link>
         </div>
       </div>
     </nav>

@@ -1,13 +1,15 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
+import connectDB from './connectMongoDb.js';
 
 import userRoutes from "./routes/users.js";
 import questionRoutes from "./routes/Questions.js";
 import answerRoutes from "./routes/Answers.js";
-import connectDB from "./connectMongoDb.js";
+ // This should work if connectMongoDb.js has a default export
 
 dotenv.config();
+console.log("MongoDB URL:", process.env.MONGODB_URL); // Check the value
 connectDB();
 const app = express();
 app.use(express.json({ limit: "30mb", extended: true }));

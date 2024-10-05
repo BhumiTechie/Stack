@@ -9,6 +9,7 @@ import DisplayQuestion from "./Pages/Questions/DisplayQuestion";
 import Tags from "./Pages/Tags/Tags";
 import Users from "./Pages/Users/Users";
 import UserProfile from "./Pages/UserProfile/UserProfile";
+import GoogleAuth from "./components/GoogleAuth";
 
 const AllRoutes = ({ slideIn, handleSlideIn }) => {
   return (
@@ -43,7 +44,9 @@ const AllRoutes = ({ slideIn, handleSlideIn }) => {
           <UserProfile slideIn={slideIn} handleSlideIn={handleSlideIn} />
         }
       />
+         <Route path="/GoogleAuth" element={<GoogleAuth />} />
     </Routes>
+    
   );
 };
 
