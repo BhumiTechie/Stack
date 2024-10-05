@@ -40,7 +40,7 @@ const Navbar = ({ handleSlideIn }) => {
         </button>
         <div className="navbar-1">
           <Link to="/" className="nav-item nav-logo">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" /> Code Quest
           </Link>
           <Link to="/" className="nav-item nav-btn res-nav">
             About
